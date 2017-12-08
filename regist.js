@@ -7,7 +7,6 @@ var xmlhttp;
 		}
 		//确认密码的文本框失焦时--检验两次密码是否正确
 		document.getElementById("passagain").addEventListener("blur",ISsame);
-
 		//网络请求状态发生变化时的事件
 		function state_Change(){
 			if (xmlhttp.readyState==0){
@@ -65,4 +64,9 @@ var xmlhttp;
 			else{
 				document.getElementById("pass_info").innerHTML="";
 			}
+		}
+		//创建点击按钮的事件
+		document.getElementById("read_data").addEventListener("click",Fread_data);
+		function Fread_data(){
+			alert("操作");
 		}

@@ -7,11 +7,11 @@
 	body{
 		background: #b3b3b3;
 	}
-		.div1{
-			margin:300px auto;
+		.div1{	
 			width:300px;
 			height:80px;
 			text-align: right;
+			margin:0px auto;
 		}
 		.div1 p{
 			font-size: 12px;
@@ -22,13 +22,16 @@
 </head>
 <body>
 	<div class="div1">
+	验证用户输入信息是否能注册：
 		<form action="" name="regist">
 			用户名：<input type="text" name="username" id="name"><p id="name_info"></p><br/>
 			密码：<input type="password" name="pass"><br/>
 			确认密码：<input type="password" name="passagain" id="passagain"><p id="pass_info"></p><br/>
 			<input type="submit" value="注册">
 			<input type="reset" value="取消">
-		</form>
+		</form><hr/>
+	异步操作数据库数据：
+		<input type="button" value="读取数据表" id="read_data">
 	</div>
 	<script src="regist.js"></script>
 </body>
